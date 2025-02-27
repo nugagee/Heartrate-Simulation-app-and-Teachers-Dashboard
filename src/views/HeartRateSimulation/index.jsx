@@ -2,6 +2,7 @@ import logo from "../../logo.svg";
 import "../../App.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function HeartRateSimulation() {
   const [age, setAge] = useState(15);
@@ -77,6 +78,15 @@ function HeartRateSimulation() {
             Simulated Heart Rate:{" "}
             <strong>{heartRate ? `${heartRate} BPM` : "Loading..."}</strong>
           </div>
+          <br />
+           <div class="content-center mt-50">
+              <Link
+                to="/"
+                // class="btn btn-primary btn-default btn-squared px-30"
+              >
+                Return Home
+              </Link>{" "}
+            </div>
         </div>
       </header>
     </div>

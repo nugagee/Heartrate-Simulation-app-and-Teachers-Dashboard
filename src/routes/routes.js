@@ -16,6 +16,7 @@ import {
 const App = () => {
   let routes = useRoutes([
     { path: "/", element: <TeachersDashboard /> },
+    { path: "teachers-dashboard", element: <TeachersDashboard /> },
     { path: "heartrate-simulation", element: <HeartRateSimulation /> },
     { path: "*", element: <NotFound /> },
     // ...
