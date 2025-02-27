@@ -14,6 +14,7 @@ import {
   Legend,
 } from 'chart.js'
 import { Chart } from 'react-chartjs-2' 
+import { Link } from "react-router-dom";
 
 ChartJS.register(
   CategoryScale,
@@ -74,6 +75,15 @@ const TeachersDashboard = () => {
         <div className="p-5 bg-white rounded shadow-md">
           <Line data={data} />
         </div>
+        <br />
+           <div class="content-center mt-50">
+              <Link
+                to="/heartrate-simulation"
+                // class="btn btn-primary btn-default btn-squared px-30"
+              >
+                Return to the Simulation page
+              </Link>{" "}
+            </div>
       </header>
     </div>
   );
