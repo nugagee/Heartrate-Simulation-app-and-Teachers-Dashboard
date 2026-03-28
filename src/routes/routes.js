@@ -12,12 +12,16 @@ import {
   Route,
   useRoutes,
 } from "react-router-dom";
+import StudentEngagementDashboard from "../views/StudentEngagementDashboard";
+import CountingImages from "../views/CountingImages";
 
 const App = () => {
   let routes = useRoutes([
     { path: "/", element: <TeachersDashboard /> },
     { path: "teachers-dashboard", element: <TeachersDashboard /> },
+    { path: "student-dashboard", element: <StudentEngagementDashboard /> },
     { path: "heartrate-simulation", element: <HeartRateSimulation /> },
+    { path: "counting-images", element: <CountingImages /> },
     { path: "*", element: <NotFound /> },
     // ...
   ]);
